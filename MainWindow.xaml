@@ -43,9 +43,9 @@
         <Button  x:Name="btnEqual" Grid.Row="5" FontSize="28" Grid.Column="3">=</Button>
 
         <!-- Clear buttpns -->
-        <Button x:Name="btnCe" Grid.Row="1" FontSize="22" Grid.Column="0">CE</Button>
-        <Button x:Name="btnC" Grid.Row="1" FontSize="22" Grid.Column="1">C</Button>
-        <Button x:Name="btnBackSpace" Grid.Row="1" FontSize="22" Grid.Column="2" Content="&lt;-"></Button>
+        <Button x:Name="btnCe" Grid.Row="1" FontSize="22" Grid.Column="0" Click="btnCe_Click">CE</Button>
+        <Button x:Name="btnC" Grid.Row="1" FontSize="22" Grid.Column="1" Click="btnC_Click">C</Button>
+        <Button x:Name="btnBackSpace" Grid.Row="1" FontSize="22" Grid.Column="2" Content="&lt;-" Click="btnBackSpace_Click"></Button>
 
         <!-- Display text box -->
         <TextBox x:Name="txtDisplay" IsReadOnly="True" BorderThickness="0" TextAlignment="Right" VerticalContentAlignment="Center" FontSize="40" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">0</TextBox>

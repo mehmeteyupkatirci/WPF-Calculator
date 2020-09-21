@@ -148,5 +148,45 @@ namespace Calculator
             txtDisplay.Text = "0";
         }
         #endregion
+
+        #region Clear Operations
+
+        private void btnCe_Click(object sender, RoutedEventArgs e)
+        {
+            if (operation == "")
+            {
+                number1 = 0;
+            }
+            else
+            {
+                number2 = 0;
+            }
+
+            txtDisplay.Text = "0";
+        }
+
+        private void btnBackSpace_Click(object sender, RoutedEventArgs e)
+        {
+            if (operation == "")
+            {
+                number1 = (number1 / 10);
+                txtDisplay.Text = number1.ToString();
+            }
+            else
+            {
+                number2 = (number2 / 10);
+                txtDisplay.Text = number2.ToString();
+            }
+        }
+
+        private void btnC_Click(object sender, RoutedEventArgs e)
+        {
+            number1 = 0;
+            number2 = 0;
+            operation = "";
+            txtDisplay.Text = "0";
+        }
+
+        #endregion
     }
 }
