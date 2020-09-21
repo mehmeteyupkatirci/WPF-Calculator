@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="CALCULATOR" Height="430" Width="280">
+        Title="CALCULATOR" Height="400" Width="600">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -40,7 +40,7 @@
         <Button  x:Name="btnMines" Grid.Row="2" FontSize="28" Grid.Column="3" Click="btnMines_Click">-</Button>
         <Button  x:Name="btnTimes" Grid.Row="3" FontSize="28" Grid.Column="3" Click="btnTimes_Click">*</Button>
         <Button  x:Name="btnDivide" Grid.Row="4" FontSize="28" Grid.Column="3" Click="btnDivide_Click">/</Button>
-        <Button  x:Name="btnEqual" Grid.Row="5" FontSize="28" Grid.Column="3">=</Button>
+        <Button  x:Name="btnEqual" Grid.Row="5" FontSize="28" Grid.Column="3" Click="btnEqual_Click">=</Button>
 
         <!-- Clear buttpns -->
         <Button x:Name="btnCe" Grid.Row="1" FontSize="22" Grid.Column="0" Click="btnCe_Click">CE</Button>
