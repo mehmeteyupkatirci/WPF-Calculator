@@ -33,18 +33,18 @@
         <Button x:Name="btn1" Grid.Row="4" FontSize="22" Grid.Column="0" Click="btn1_Click">1</Button>
         <Button x:Name="btn2" Grid.Row="4" FontSize="22" Grid.Column="1" Click="btn2_Click">2</Button>
         <Button x:Name="btn3" Grid.Row="4" FontSize="22" Grid.Column="2" Click="btn3_Click">3</Button>
-        <Button x:Name="btn0" Grid.Row="5" FontSize="22" Grid.Column="1" Click="btn0_Click">0</Button>
+        <Button x:Name="btn0" Grid.Row="5" Grid.ColumnSpan="3" FontSize="22"  Click="btn0_Click">0</Button>
 
         <!--Maths buttons-->
-        <Button  x:Name="btnPlus" Grid.Row="1" FontSize="28" Grid.Column="3">+</Button>
-        <Button  x:Name="btnMines" Grid.Row="2" FontSize="28" Grid.Column="3">-</Button>
-        <Button  x:Name="btnTimes" Grid.Row="3" FontSize="28" Grid.Column="3">*</Button>
-        <Button  x:Name="btnDivide" Grid.Row="4" FontSize="28" Grid.Column="3">/</Button>
+        <Button  x:Name="btnPlus" Grid.Row="1" FontSize="28" Grid.Column="3" Click="btnPlus_Click">+</Button>
+        <Button  x:Name="btnMines" Grid.Row="2" FontSize="28" Grid.Column="3" Click="btnMines_Click">-</Button>
+        <Button  x:Name="btnTimes" Grid.Row="3" FontSize="28" Grid.Column="3" Click="btnTimes_Click">*</Button>
+        <Button  x:Name="btnDivide" Grid.Row="4" FontSize="28" Grid.Column="3" Click="btnDivide_Click">/</Button>
         <Button  x:Name="btnEqual" Grid.Row="5" FontSize="28" Grid.Column="3">=</Button>
 
         <!-- Clear buttpns -->
         <Button x:Name="btnCe" Grid.Row="1" FontSize="22" Grid.Column="0">CE</Button>
-        <Button x:Name="btnC" Grid.Row="1" FontSize="22" Grid.Column="1">CE</Button>
+        <Button x:Name="btnC" Grid.Row="1" FontSize="22" Grid.Column="1">C</Button>
         <Button x:Name="btnBackSpace" Grid.Row="1" FontSize="22" Grid.Column="2" Content="&lt;-"></Button>
 
         <!-- Display text box -->

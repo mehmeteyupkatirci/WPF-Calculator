@@ -102,5 +102,51 @@ namespace Calculator
             }
         }
         #endregion
+
+        #region Operations
+
+        private void btnPlus_Click(object sender, RoutedEventArgs e)
+        {
+            operation = "+";
+            txtDisplay.Text = "0";
+        }
+
+        private void btnMines_Click(object sender, RoutedEventArgs e)
+        {
+            operation = "-";
+            txtDisplay.Text = "0";
+        }
+
+        private void btnTimes_Click(object sender, RoutedEventArgs e)
+        {
+            operation = "*";
+            txtDisplay.Text = "0";
+        }
+
+        private void btnEqual_Click(object sender, RoutedEventArgs e)
+        {
+            switch (operation)
+            {
+                case "+":
+                    txtDisplay.Text = (number1 + number2).ToString();
+                    break;
+                case "-":
+                    txtDisplay.Text = (number1 - number2).ToString();
+                    break;
+                case "*":
+                    txtDisplay.Text = (number1 * number2).ToString();
+                    break;
+                case "/":
+                    txtDisplay.Text = (number1 / number2).ToString();
+                    break;
+            }
+        }
+
+        private void btnDivide_Click(object sender, RoutedEventArgs e)
+        {
+            operation = "/";
+            txtDisplay.Text = "0";
+        }
+        #endregion
     }
 }
